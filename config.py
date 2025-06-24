@@ -7,38 +7,42 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID")
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","27971375"))
+API_HASH = getenv("API_HASH","c3632bb97809c2e824ee595d638e3d02")
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","@Mr_Qtuu_panda")
+OWNER_USERNAME = getenv("OWNER_USERNAME","Mr_Qtuu_panda")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","@Miss_aura_bot")
+BOT_USERNAME = getenv("BOT_USERNAME","Miss_aura_bot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
 
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("mongodb+srv://vanshpeace:y9nXZEHc4G2Zh9Xn@cluster0.lrqdzvv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://vanshpeace:y9nXZEHc4G2Zh9Xn@cluster0.lrqdzvv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv(""-1002747856316, None))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002747856316))
 
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
-OWNER_ID = int(getenv("7992183767", 6051510669))
+OWNER_ID = int(getenv("OWNER_ID", 7992183767))
 
+
+# make your bots privacy from telegra.ph and put your url here 
+PRIVACY_LINK = getenv("PRIVACY_LINK", "https://graph.org/PRIVACY-FOR-TEAM-PURVI-BOTS-09-18")
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
+API_KEY = getenv("API_KEY", '30DxNexGenBotsbe462b') # youtube song api key
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/vansh910550/SONALI_MUSIC",
@@ -46,7 +50,7 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+)   # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Thediaryofemotions")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+yCuRL5OmvFs1YjY1")
